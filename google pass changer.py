@@ -31,7 +31,7 @@ def change_password(browser, email):
         WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.CSS_SELECTOR, password_selector)))
 
         print("Writing Password...")
-        browser.find_element(By.CSS_SELECTOR, password_selector).send_keys("TheEvent2!")  # CHANGE PASSWORD ACCORDINGLY ###########################################################################################
+        browser.find_element(By.CSS_SELECTOR, password_selector).send_keys("GSAstudent12345")  # CHANGE PASSWORD ACCORDINGLY ###########################################################################################
         browser.find_element(By.CSS_SELECTOR, '#passwordNext > div > button > span').click()
         print("Attempting to log in...")
 
